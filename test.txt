@@ -1,0 +1,6 @@
+```
+/home/gear/Desktop/migration/test/test_dir/
+|
+├── test.t
+└── test.txt
+```
