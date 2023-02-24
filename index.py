@@ -23,7 +23,7 @@ except ImportError:
 # top directory
 def _init() -> str:
     print("paste starting directory:", flush=True)
-    root_dir = str(input()).strip()
+    root_dir = str(input()).strip('" ')
 
     if not os.path.isabs(root_dir):
         root_dir = os.path.abspath(root_dir)
