@@ -11,16 +11,17 @@ try:
     from tree import DirectoryTree
 
 except ModuleNotFoundError as e:
-    import sys
-
     # ----- pull repo locally ------ #
-    clone = "git clone https://github.com/peb-peb/tree.git"
-    os.system(clone)
-    cwd = os.getcwd()
+    # clone = "git clone https://github.com/peb-peb/tree.git"
+    # os.system(clone)
+    # cwd = os.getcwd()
 
-    # ------- get module path ------ #
-    tree_lib = os.path.join(cwd, "tree")
-    sys.path.append(tree_lib)
+    # # ------- get module path ------ #
+    # tree_lib = os.path.join(cwd, "tree")
+    # sys.path.append(tree_lib)
+
+    install = "python -m pip install tree-peb"
+    os.system(install)
 
     from tree import DirectoryTree
 
