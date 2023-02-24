@@ -6,26 +6,18 @@ Needs to be applied to Windows and Ubuntu
 
 import os  # not operating system speciic
 
-
 try:
     from tree import DirectoryTree
 
-except ModuleNotFoundError as e:
-    # ----- pull repo locally ------ #
-    # clone = "git clone https://github.com/peb-peb/tree.git"
-    # os.system(clone)
-    # cwd = os.getcwd()
+except ImportError:
+    import sys
 
-    # # ------- get module path ------ #
-    # tree_lib = os.path.join(cwd, "tree")
-    # sys.path.append(tree_lib)
-
-    install = "python -m pip install tree-peb"
-    os.system(install)
+    sys.path.append("..")
 
     from tree import DirectoryTree
 
 # ---- get host and hostname and meta data ----
+# TODO
 
 
 # top directory
