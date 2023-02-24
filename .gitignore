@@ -1,3 +1,3 @@
 migration/
-test/*
-test*
+**/test/**
+test.*
